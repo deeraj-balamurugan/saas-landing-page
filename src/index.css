@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --container-padding-default: 20px;
+  --container-padding-lg: 80px;
+  --container-max-width: 1280px;
+}
+
+@utility container {
+  max-width: var(--container-max-width);
+  padding-left: var(--container-padding-default);
+  padding-right: var(--container-padding-default);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: var(--container-padding-lg);
+    padding-right: var(--container-padding-lg);
+  }
+}
+
+body {
+  font-family: var(--font-dm-sans);
+}
+
+.logo-ticker-image {
+  @apply h-8 w-auto;
+}
+
+.tag {
+  @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-b from-black to-blue-700 text-transparent bg-clip-text;
+}
+
+.section-title {
+  @apply text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter text-center;
+}
+
+.section-description {
+  @apply text-[22px] leading-[30px] text-[#010D3E] tracking-tight text-center;
+}
+
+.section-heading {
+  @apply max-w-[540px] mx-auto;
+}
+
+.card {
+  @apply p-10 border border-[#f1f1f1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+}
