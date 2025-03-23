@@ -32,7 +32,7 @@ const CallToAction = () => {
             src={starImage}
             alt="Star Image"
             width={360}
-            className="absolute -left-[350px] -top-[137px]"
+            className="hidden md:block absolute -left-[350px] -top-[137px]"
             style={{
               translateY,
             }}
@@ -41,7 +41,7 @@ const CallToAction = () => {
             src={springImage}
             alt="Spring Image"
             width={360}
-            className="absolute -right-[331px] -top-[19px]"
+            className="hidden md:block absolute -right-[331px] -top-[19px]"
             style={{
               translateY,
             }}
